@@ -1,0 +1,47 @@
+/* footer */
+footer {
+    padding: nth($padding, 4);
+    margin-top: nth($margin, 4)+5;
+    @include shadow;
+    background: #f44336;
+
+    & li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+
+    & a {
+        color: $black-color;
+    }
+
+    @include tablet {
+        & h2 {
+            text-decoration: none;
+        }
+    }
+
+    @include mobile {
+        background: $black-color;
+        color: $white-color;
+        padding: nth($padding, 4)+5;
+        box-shadow: none;
+
+        a {
+            color: $white-color;
+        }
+
+        & h2 {
+            text-align: start;
+            margin-bottom: nth($margin, 3);
+        }
+
+        & li {
+            justify-content: flex-start;
+        }
+    }
+}

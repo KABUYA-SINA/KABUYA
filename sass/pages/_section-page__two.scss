@@ -1,0 +1,174 @@
+    section {
+
+        .first-image {
+            img {
+                @extend %others-pages;
+
+                @include mobile {
+                    height: 228px;
+                }
+            }
+        }
+
+        .first-one {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: nth($margin, 2);
+            margin-bottom: nth($margin, 2);
+
+            & i {
+                margin-left: nth($padding, 1);
+
+                @include mobile {
+                    font-size: 25px;
+                    margin: 0;
+                }
+            }
+
+            @include mobile {
+                justify-content: space-between;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                position: relative;
+                top: -51px;
+                margin-bottom: -47px;
+                padding: nth($padding, 3) nth($padding, 4);
+                background: #F2F4F5;
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .first-bloc {
+            display: inline-block;
+
+            @include mobile {
+                display: block;
+            }
+        }
+
+        .first-bloc__box {
+            display: table-caption;
+
+            @include mobile {
+                display: block;
+            }
+        }
+
+        .first-in,
+        .second-in,
+        .last-in {
+
+            .line {
+                display: inline-block;
+                width: 59px;
+                border: double thin #b0f2b6;
+                margin-bottom: nth($padding, 4)+10;
+            }
+
+            .zone__text {
+                display: flex;
+                overflow: hidden;
+                @include shadow;
+                @include box-radius;
+                margin-bottom: nth($margin, 2);
+                background: #b0f2b6;
+
+                &:hover .zone__text--anime i {
+                    transform: rotate(1turn);
+                    transition-duration: 1.5s;
+                }
+
+                &--move {
+                    width: 91%;
+                    transform-origin: left;
+                    transform: scaleX(1.1);
+                    /* 1.1019, 0.98 */
+                    transition: all 750ms ease-in-out;
+                    opacity: 1;
+                    background: $white-color;
+                    cursor: pointer;
+                    text-align: left;
+                    padding: nth($padding, 2);
+
+                    @include mobile {
+                        & {
+                            width: 90%;
+                            transform: scale(1.12);
+
+                            .break-this {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+
+                &--move:hover {
+                    transform: scale(.95, 1);
+
+                    /*.95, 1 */
+                    @include mobile {
+                        &:active {
+                            transform: scale(1, 1);
+                        }
+                    }
+                }
+
+                .text-overflow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .text-overflow__move {
+                    text-overflow: ellipsis;
+                    width: 70%;
+                }
+
+                p {
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .space {
+                    padding-left: nth($padding, 2);
+                    padding-right: nth($padding, 2);
+                }
+
+                .zone__text--anime {
+                    max-width: 9%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: #b0f2b6;
+                    color: $white-color;
+
+                    @include mobile {
+                        width: 6%;
+                        /* max-w10 */
+                    }
+                }
+            }
+
+            @include mobile {
+                /* box-first-in.....*/
+                text-align: start;
+                padding: nth($padding, 3);
+
+                .marge__title {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .btn {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }

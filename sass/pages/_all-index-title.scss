@@ -1,0 +1,7 @@
+.first-message,
+.way,
+.section-article,
+header img,
+.way__box {
+    @extend %padding;
+}

@@ -1,0 +1,24 @@
+.card__heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.icon-heart__hidden:hover {
+    opacity: 0;
+}
+
+.icon-heart {
+    position: absolute;
+    color: transparent;
+    background: linear-gradient(to top left, rgb(209, 73, 245), rgb(235, 176, 211));
+    -webkit-background-clip: text;
+    opacity: 0;
+    /* 0 */
+}
+
+.icon-heart:hover {
+    opacity: 1;
+}

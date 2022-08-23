@@ -1,0 +1,57 @@
+/* MIXIN */
+@mixin shadow {
+    box-shadow: 0px 5px 10px #999;
+}
+
+@mixin box-radius {
+    border-radius: 20px;
+}
+
+@mixin title-font {
+    font-family: 'Shrikhand Regular';
+}
+
+@mixin btn {
+    padding: nth($padding, 3);
+    color: $white-color;
+    /* background-adjust-hue($first-color 5 */
+    @include box-radius;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include shadow;
+    cursor: pointer;
+
+    &:hover {
+        @include btn-background;
+        color: $black-color;
+    }
+}
+
+@mixin btn-background($color: $first-color) {
+    @if (saturation($first-color) < 10%) {
+        $color: saturation($first-color, 40%);
+    }
+
+    @else {
+        $color: lighten($first-color, 30%);
+    }
+
+    background: $color;
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin anime-base {
+    position: relative;
+    opacity: 1;
+}

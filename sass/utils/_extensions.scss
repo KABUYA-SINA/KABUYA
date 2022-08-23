@@ -1,0 +1,40 @@
+/* extensions */
+%padding {
+    padding-top: nth($padding, 4);
+    padding-bottom: nth($padding, 4);
+}
+
+%main-box {
+    @include box-radius;
+    @include shadow;
+    width: 90%;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+%main-box__new {
+    padding: nth($padding, 3) nth($padding, 4)+10;
+    background-color: #c0e9c3;
+    color: #1f7736;
+    font-weight: bold;
+    position: absolute;
+    margin: 30px;
+}
+
+%main-box__text {
+    display: flex;
+    justify-content: space-between;
+    padding: nth($padding, 1) nth($padding, 3) nth($padding, 2) nth($padding, 2);
+    margin-top: nth($margin, 1)-12;
+}
+
+%others-pages {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}

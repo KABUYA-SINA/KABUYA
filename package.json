@@ -1,0 +1,13 @@
+{
+  "name": "p3_kabuya_sina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/css/styles.css",
+    "prefix": "postcss ./assets/css/styles.css --use autoprefixer -d ./assets/css/prefixed/"
+  },
+  "author": "\"KABUYA\"",
+  "license": "ISC",
+  "browserslist": "last 2 versions"
+}

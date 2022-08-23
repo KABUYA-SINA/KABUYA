@@ -1,0 +1,18 @@
+    .logo-annexe__page {
+        display: flex;
+        align-items: center;
+        background: #f44336;
+
+        & header {
+            box-shadow: none;
+        }
+
+        & p {
+            font-size: large;
+            padding: nth($padding, 4);
+        }
+
+        @include mobile {
+            background: $white-color;
+        }
+    }
