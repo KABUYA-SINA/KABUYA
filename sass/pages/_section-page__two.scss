@@ -108,7 +108,7 @@
                 }
 
                 &--move:hover {
-                    transform: scale(.95, 1);
+                    transform: scale(.98, 1); /*.95*/
 
                     /*.95, 1 */
                     @include mobile {

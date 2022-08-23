@@ -776,7 +776,7 @@ section .last-in .zone__text--move .break-this {
 section .first-in .zone__text--move:hover,
 section .second-in .zone__text--move:hover,
 section .last-in .zone__text--move:hover {
-  transform: scale(0.95, 1);
+  transform: scale(0.98, 1); /*.95*/
   /*.95, 1 */
 }
 @media screen and (max-width: 768px) {
