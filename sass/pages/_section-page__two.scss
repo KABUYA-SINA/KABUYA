@@ -80,6 +80,7 @@
                 &:hover .zone__text--anime i {
                     transform: rotate(1turn);
                     transition-duration: 1.5s;
+                    transition-delay: 150ms;
                 }
 
                 &--move {

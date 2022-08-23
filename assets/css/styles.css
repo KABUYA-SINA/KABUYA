@@ -744,6 +744,7 @@ section .second-in .zone__text:hover .zone__text--anime i,
 section .last-in .zone__text:hover .zone__text--anime i {
   transform: rotate(1turn);
   transition-duration: 1.5s;
+  transition-delay: 150ms;
 }
 section .first-in .zone__text--move,
 section .second-in .zone__text--move,
