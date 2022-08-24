@@ -286,6 +286,11 @@ header {
   transition: all 0.8s ease-out;
   /* header before */
 }
+@media screen and (max-width: 992px) {
+  header {
+    background: #edafab;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     background: #fff;
@@ -313,6 +318,11 @@ footer li i {
 }
 footer a {
   color: #080808;
+}
+@media screen and (max-width: 992px) {
+  footer {
+    background: #edafab;
+  }
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -465,9 +475,7 @@ footer a {
 }
 @media screen and (max-width: 992px) {
   .way {
-    background: linear-gradient(179deg, rgba(217, 17, 17, 0) 50%, rgba(70, 54, 88, 0.4) 90%);
-    border-radius: 0;
-    box-shadow: none;
+    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgba(244, 67, 54, 0.3607843137) 90%);
   }
 }
 @media screen and (max-width: 768px) {
@@ -663,6 +671,11 @@ footer a {
 .logo-annexe__page p {
   font-size: large;
   padding: 20px;
+}
+@media screen and (max-width: 992px) {
+  .logo-annexe__page {
+    background: #edafab;
+  }
 }
 @media screen and (max-width: 768px) {
   .logo-annexe__page {

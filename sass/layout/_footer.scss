@@ -20,9 +20,7 @@ footer {
     }
 
     @include tablet {
-        & h2 {
-            text-decoration: none;
-        }
+        background: #edafab;
     }
 
     @include mobile {

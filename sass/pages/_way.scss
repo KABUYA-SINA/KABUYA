@@ -47,9 +47,7 @@
     }
 
     @include tablet {
-        background: linear-gradient(179deg, rgb(217 17 17 / 0%) 50%, rgb(70 54 88 / 40%) 90%);
-        border-radius: 0;
-        box-shadow: none;
+        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f443365c 90%);
     }
 
     @include mobile {

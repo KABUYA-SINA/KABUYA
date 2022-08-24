@@ -11,6 +11,9 @@
             font-size: large;
             padding: nth($padding, 4);
         }
+        @include tablet{
+            background: #edafab;
+        }
 
         @include mobile {
             background: $white-color;
