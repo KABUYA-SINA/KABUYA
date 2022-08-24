@@ -82,6 +82,11 @@
                     transition-duration: 1.5s;
                     transition-delay: 150ms;
                 }
+                &:active .zone__text--anime i {
+                    transform: rotate(0deg);
+                    transition-duration: 1.5s;
+                    transition-delay: 100ms;
+                }
 
                 &--move {
                     width: 91%;
@@ -108,11 +113,16 @@
                 &--move:hover {
                 transform: scale(.98, 1);  /*.95, 1 */
                     @include mobile {
-                        &:active {
-                            transform: scale(1, 1);
-                        }
+                        transform: scale( .97 , 1);
                     }
                 }
+                &--move:active{
+                    transform: scale(.98, 1);
+                    @include mobile {
+                        transform: scale(.97, 1);
+                    }
+                }
+
 
                 .text-overflow {
                     display: flex;

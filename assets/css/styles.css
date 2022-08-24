@@ -743,6 +743,13 @@ section .last-in .zone__text:hover .zone__text--anime i {
   transition-duration: 1.5s;
   transition-delay: 150ms;
 }
+section .first-in .zone__text:active .zone__text--anime i,
+section .second-in .zone__text:active .zone__text--anime i,
+section .last-in .zone__text:active .zone__text--anime i {
+  transform: rotate(0deg);
+  transition-duration: 1.5s;
+  transition-delay: 100ms;
+}
 section .first-in .zone__text--move,
 section .second-in .zone__text--move,
 section .last-in .zone__text--move {
@@ -776,10 +783,22 @@ section .last-in .zone__text--move:hover {
   transform: scale(0.98, 1); /*.95, 1 */
 }
 @media screen and (max-width: 768px) {
-  section .first-in .zone__text--move:hover:active,
-section .second-in .zone__text--move:hover:active,
-section .last-in .zone__text--move:hover:active {
-    transform: scale(1, 1);
+  section .first-in .zone__text--move:hover,
+section .second-in .zone__text--move:hover,
+section .last-in .zone__text--move:hover {
+    transform: scale(0.97, 1);
+  }
+}
+section .first-in .zone__text--move:active,
+section .second-in .zone__text--move:active,
+section .last-in .zone__text--move:active {
+  transform: scale(0.98, 1);
+}
+@media screen and (max-width: 768px) {
+  section .first-in .zone__text--move:active,
+section .second-in .zone__text--move:active,
+section .last-in .zone__text--move:active {
+    transform: scale(0.97, 1);
   }
 }
 section .first-in .zone__text .text-overflow,
