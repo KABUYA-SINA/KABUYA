@@ -284,7 +284,7 @@ header {
   background: #f44336;
   /* background linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211)) */
   transition: all 0.8s ease-out;
-  /* header before ici */
+  /* header before */
 }
 @media screen and (max-width: 768px) {
   header {
@@ -313,11 +313,6 @@ footer li i {
 }
 footer a {
   color: #080808;
-}
-@media screen and (max-width: 992px) {
-  footer h2 {
-    text-decoration: none;
-  }
 }
 @media screen and (max-width: 768px) {
   footer {
