@@ -171,10 +171,4 @@
             }
         }
     }
-
-    @include mobile {
-        flex-flow: column nowrap;
-        align-items: stretch;
-        display: flex;
-    }
 }

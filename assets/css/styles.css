@@ -493,6 +493,9 @@ footer a {
 }
 @media screen and (max-width: 768px) {
   .section-article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
     background: rgb(247, 247, 247);
   }
 }
@@ -642,12 +645,6 @@ footer a {
 @media screen and (max-width: 992px) and (max-width: 768px) {
   .section-article .fourth__image img {
     height: 180px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section-article {
-    flex-flow: column nowrap;
-    align-items: stretch;
   }
 }
 
