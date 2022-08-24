@@ -95,22 +95,18 @@
                     text-align: left;
                     padding: nth($padding, 2);
 
-                    @include mobile {
+                    @include mobile {                                            
                         & {
                             width: 90%;
                             transform: scale(1.12);
-
                             .break-this {
                                 display: flex;
                             }
                         }
                     }
                 }
-
                 &--move:hover {
-                    transform: scale(.98, 1); /*.95*/
-
-                    /*.95, 1 */
+                transform: scale(.98, 1);  /*.95, 1 */
                     @include mobile {
                         &:active {
                             transform: scale(1, 1);
