@@ -2,9 +2,6 @@
     background: linear-gradient(287deg, rgb(245 241 241 / 0%) 50%, rgb(255 252 252) 90%);
 
     @include mobile {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: stretch;
         background: rgb(247, 247, 247);
     }
 
@@ -170,5 +167,10 @@
                 }
             }
         }
+    }
+    @include mobile{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
     }
 }
