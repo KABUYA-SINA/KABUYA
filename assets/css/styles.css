@@ -491,11 +491,6 @@ footer a {
   background: linear-gradient(287deg, rgba(245, 241, 241, 0) 50%, rgb(255, 252, 252) 90%);
   /* ALL IMG HEIGHT */
 }
-@media screen and (max-width: 768px) {
-  .section-article {
-    background: rgb(247, 247, 247);
-  }
-}
 .section-article i {
   cursor: pointer;
 }
@@ -649,6 +644,7 @@ footer a {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
+    background: rgb(247, 247, 247);
   }
 }
 
