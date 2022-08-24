@@ -373,6 +373,10 @@ footer a {
   opacity: 0;
 }
 
+.icon-heart__hidden:active {
+  opacity: 0;
+}
+
 .icon-heart {
   position: absolute;
   color: transparent;
@@ -384,6 +388,11 @@ footer a {
 
 .icon-heart:hover {
   opacity: 1;
+}
+
+.icon-heart:active {
+  opacity: 1;
+  background-image: linear-gradient(to top, #d149f5, #e163e7, #eb7ddc, #ee97d6, #ebb0d3);
 }
 
 .map {
