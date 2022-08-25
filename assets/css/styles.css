@@ -751,7 +751,7 @@ section .last-in .zone__text {
   box-shadow: 0px 5px 10px #999;
   border-radius: 20px;
   margin-bottom: 10px;
-  background: #b0f2b6;
+  /* background#b0f2b6 */
 }
 section .first-in .zone__text:hover .zone__text--anime i,
 section .second-in .zone__text:hover .zone__text--anime i,
@@ -770,12 +770,12 @@ section .last-in .zone__text:active .zone__text--anime i {
 section .first-in .zone__text--move,
 section .second-in .zone__text--move,
 section .last-in .zone__text--move {
-  width: 91%;
+  width: 100%; /* 91 */
   transform-origin: left;
   transform: scaleX(1.1);
   /* 1.1019, 0.98 */
   transition: all 750ms ease-in-out;
-  opacity: 1;
+  /* opacity1 */
   background: #fff;
   cursor: pointer;
   text-align: left;
@@ -797,25 +797,25 @@ section .last-in .zone__text--move .break-this {
 section .first-in .zone__text--move:hover,
 section .second-in .zone__text--move:hover,
 section .last-in .zone__text--move:hover {
-  transform: scale(0.98, 1); /*.95, 1 */
+  transform: scale(1, 1); /*.95, 1 */ /*.98 */
 }
 @media screen and (max-width: 768px) {
   section .first-in .zone__text--move:hover,
 section .second-in .zone__text--move:hover,
 section .last-in .zone__text--move:hover {
-    transform: scale(0.97, 1);
+    transform: scale(1, 1);
   }
 }
 section .first-in .zone__text--move:active,
 section .second-in .zone__text--move:active,
 section .last-in .zone__text--move:active {
-  transform: scale(0.98, 1);
+  transform: scale(1, 1); /* .98 */
 }
 @media screen and (max-width: 768px) {
   section .first-in .zone__text--move:active,
 section .second-in .zone__text--move:active,
 section .last-in .zone__text--move:active {
-    transform: scale(0.97, 1);
+    transform: scale(1, 1); /* .97 */
   }
 }
 section .first-in .zone__text .text-overflow,
@@ -846,7 +846,7 @@ section .last-in .zone__text .space {
 section .first-in .zone__text .zone__text--anime,
 section .second-in .zone__text .zone__text--anime,
 section .last-in .zone__text .zone__text--anime {
-  max-width: 9%;
+  width: 10%; /* 9 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -858,7 +858,7 @@ section .last-in .zone__text .zone__text--anime {
   section .first-in .zone__text .zone__text--anime,
 section .second-in .zone__text .zone__text--anime,
 section .last-in .zone__text .zone__text--anime {
-    width: 6%;
+    width: 10%; /* 6 */
     /* max-w10 */
   }
 }
