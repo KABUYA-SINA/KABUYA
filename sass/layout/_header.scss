@@ -1,20 +1,8 @@
 header {
-    content: "";
-    position: -webkit-sticky;
-    position: sticky;
-    /* fixed */
-    /* sticky */
-    top: 0;
-    left: 0;
     width: 100%;
-    /* height100px */
-    z-index: 100;
     @include shadow;
     background: #f44336;
     /* background linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211)) */
-    transition: all .8s ease-out;
-
-    /* header before */
     @include tablet{
         background: #edafab;
     }
