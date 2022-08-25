@@ -39,7 +39,7 @@
     background: $color;
 }
 
-@mixin color($color: $first-color) {
+@mixin color($color: $first-color){
     background: darken($color, 1%);
     /* darken($colour, 10%)*/ /* lighten($color, 10%) */
 }
