@@ -44,6 +44,10 @@
     /* darken($colour, 10%)*/ /* lighten($color, 10%) */
 }
 
+/* tryin' */
+@mixin mixing-color($color: $first-color, $color-two: $second-color){
+    background: lighten($color and $color-two, 10%);
+}
 
 @mixin tablet {
     @media screen and (max-width: map-get($breakpoints, tablet)) {

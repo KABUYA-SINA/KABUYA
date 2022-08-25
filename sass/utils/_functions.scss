@@ -7,3 +7,14 @@
         @return darken($color, 10%);
     }
 }
+
+@function lightness-shift($color, $color-two) {
+    @if (lightness($color) < 25%) and (lightness($color-two) < 25%){
+        @return lighten($color, 10%);
+    }
+
+    @else {
+        @return darken($color, 10%);
+    }
+}
+

@@ -1,5 +1,6 @@
 .way {
-    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f44336 90%);
+    /* background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f44336 90%) */
+    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f436b138 90%);
 
     &-one {
         display: flex;
@@ -39,7 +40,7 @@
             @include mobile {
                 position: relative;
                 left: -10px;
-                @include color($first-color);
+                @include color($first-color); 
             }
         }
 
