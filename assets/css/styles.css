@@ -681,7 +681,8 @@ footer a {
 .logo-annexe__page {
   display: flex;
   align-items: center;
-  background: #f44336;
+  /* background: #f44336 */
+  background: #fface8;
 }
 .logo-annexe__page header {
   box-shadow: none;
