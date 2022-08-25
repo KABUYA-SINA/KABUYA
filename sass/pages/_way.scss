@@ -22,6 +22,13 @@
                 color: $black-color;
             }
         }
+        &:active {
+            color: $black-color;
+                
+            h3 {
+                color: $first-color;
+            }
+        }
 
         .icons {
             border-radius: 54%;
@@ -70,6 +77,13 @@
 
         &__box:hover {
             @include btn-background;
+        }
+        &__box:active{
+            color: $first-color;
+            @include btn-background;
+            h3 {
+                color: $black-color;
+            }
         }
     }
 }

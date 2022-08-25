@@ -440,6 +440,12 @@ footer a {
 .way__box:hover h3 {
   color: #080808;
 }
+.way__box:active {
+  color: #080808;
+}
+.way__box:active h3 {
+  color: #9356DC;
+}
 .way__box .icons {
   border-radius: 54%;
   width: 23px;
@@ -485,6 +491,13 @@ footer a {
   }
   .way__box:hover {
     background: #e4d5f6;
+  }
+  .way__box:active {
+    color: #9356DC;
+    background: #e4d5f6;
+  }
+  .way__box:active h3 {
+    color: #080808;
   }
 }
 
