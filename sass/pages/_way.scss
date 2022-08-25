@@ -39,6 +39,7 @@
             @include mobile {
                 position: relative;
                 left: -10px;
+                @include color($first-color);
             }
         }
 

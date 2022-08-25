@@ -456,6 +456,8 @@ footer a {
   .way__box .icons {
     position: relative;
     left: -10px;
+    background: #9052db;
+    /* darken($colour, 10%)*/ /* lighten($color, 10%) */
   }
 }
 .way__box .icons__marge {

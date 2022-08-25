@@ -39,6 +39,12 @@
     background: $color;
 }
 
+@mixin color($color: $first-color) {
+    background: darken($color, 1%);
+    /* darken($colour, 10%)*/ /* lighten($color, 10%) */
+}
+
+
 @mixin tablet {
     @media screen and (max-width: map-get($breakpoints, tablet)) {
         @content;
