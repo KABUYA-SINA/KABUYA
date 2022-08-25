@@ -98,15 +98,16 @@
         }
 
         .first__image {
-            height: 390px;
-
+            height: 330px; /* 390 */ 
+            width: 100%;
             @include mobile {
                 height: 250px;
-                /* 230 */
+                width: 90%;
+                /* 230 */ 
             }
 
             & img {
-                height: 320px;
+                height: 260px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -115,15 +116,16 @@
         }
 
         .second__image {
-            height: 390px;
-
+            height: 330px; /* 390 */
+            width: 100%;
             @include mobile {
                 height: 250px;
+                width: 90%;
                 /* 230 */
             }
 
             & img {
-                height: 320px;
+                height: 260px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -133,14 +135,15 @@
         }
 
         .third__image {
-            height: 390px;
-
+            height: 330px;  /* 390 */
+            width: 100%;
             @include mobile {
                 height: 250px;
+                width: 90%;
             }
 
             & img {
-                height: 320px;
+                height: 260px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -149,14 +152,15 @@
         }
 
         .fourth__image {
-            height: 390px;
-
+            height: 330px; /* 390 */
+            width: 100%;
             @include mobile {
                 height: 250px;
+                width: 90%;
             }
 
             & img {
-                height: 320px;
+                height: 260px;  /* 320 */
 
                 @include mobile {
                     height: 180px;
