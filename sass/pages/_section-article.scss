@@ -11,8 +11,8 @@
 
     .first__image {
         @extend %main-box;
-        height: 868px;
-        margin-bottom: nth($padding, 2);
+        height: 578px; /* 868 */ 
+        margin-bottom: nth($padding, 4);
     }
 
     .new {
@@ -36,8 +36,8 @@
 
     .second__image {
         @extend %main-box;
-        height: 868px;
-        margin-bottom: nth($padding, 2);
+        height: 578px;
+        margin-bottom: nth($padding, 4); /* 2 */
     }
 
     .second__image--box {
@@ -50,8 +50,8 @@
 
     .third__image {
         @extend %main-box;
-        height: 868px;
-        margin-bottom: nth($padding, 2);
+        height: 578px;
+        margin-bottom: nth($padding, 4);
     }
 
     .third__image--box {
@@ -64,8 +64,8 @@
 
     .fourth__image {
         @extend %main-box;
-        height: 868px;
-        margin-bottom: nth($padding, 2);
+        height: 578px;
+        margin-bottom: nth($padding, 4);
     }
 
     .fourth__image--box {
@@ -81,7 +81,7 @@
     .third__image img,
     .second__image img,
     .first__image img {
-        height: 800px;
+        height: 500px; /* 800 */
     }
 
     @include tablet {
