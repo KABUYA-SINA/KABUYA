@@ -1,9 +1,8 @@
 header {
     width: 100%;
     @include shadow;
-    /* background: #f44336;*/
-    @include mixing-color($first-color, $second-color);
-    /* background linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211)) */
+    background: #f44336;
+    /* background: linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211))  */
     @include tablet{
         background: #edafab;
     }

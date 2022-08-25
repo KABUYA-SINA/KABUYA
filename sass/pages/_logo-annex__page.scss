@@ -1,8 +1,7 @@
     .logo-annexe__page {
         display: flex;
         align-items: center;
-        /* background: #f44336 */
-        @include mixing-color($first-color, $second-color);
+        background: #f44336; 
 
         & header {
             box-shadow: none;
