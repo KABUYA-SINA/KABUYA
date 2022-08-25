@@ -419,7 +419,6 @@ footer a {
 }
 
 .way {
-  cursor: pointer;
   background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f44336 90%);
 }
 .way-one {
@@ -427,6 +426,7 @@ footer a {
   justify-content: space-evenly;
 }
 .way__box {
+  cursor: pointer;
   border-radius: 20px;
   display: flex;
   align-items: center;
