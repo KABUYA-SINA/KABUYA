@@ -770,9 +770,9 @@ section .last-in .zone__text:active .zone__text--anime i {
 section .first-in .zone__text--move,
 section .second-in .zone__text--move,
 section .last-in .zone__text--move {
-  width: 100%; /* 91 */
+  width: 91%; /* 91 */
   transform-origin: left;
-  transform: scaleX(1.1);
+  transform: scaleX(1.12);
   /* 1.1019, 0.98 */
   transition: all 750ms ease-in-out;
   /* opacity1 */
