@@ -2,7 +2,7 @@
         display: flex;
         align-items: center;
         /* background: #f44336 */
-        @include color-secondary($second-color);
+        @include color-secondary($orangeRed);
 
         & header {
             box-shadow: none;

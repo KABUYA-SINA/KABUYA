@@ -1,7 +1,7 @@
 header {
     width: 100%;
     @include shadow;
-    @include color-secondary($second-color);
+    @include color-secondary($orangeRed);
     /* background: #f44336 */
     /* background: linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211))  */
     @include tablet{

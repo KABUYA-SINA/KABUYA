@@ -3,7 +3,7 @@ footer {
     padding: nth($padding, 4);
     margin-top: nth($margin, 4)+5;
     @include shadow;
-    @include color-secondary($second-color);
+    @include color-secondary($orangeRed);
     /* background: #f44336 */ 
 
     & li {
