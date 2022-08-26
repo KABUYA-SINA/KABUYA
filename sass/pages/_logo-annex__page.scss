@@ -1,7 +1,8 @@
     .logo-annexe__page {
         display: flex;
         align-items: center;
-        background: #f44336; 
+        /* background: #f44336 */
+        @include color-secondary($second-color);
 
         & header {
             box-shadow: none;

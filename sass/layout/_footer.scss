@@ -3,7 +3,8 @@ footer {
     padding: nth($padding, 4);
     margin-top: nth($margin, 4)+5;
     @include shadow;
-    background: #f44336; 
+    @include color-secondary($second-color);
+    /* background: #f44336 */ 
 
     & li {
         display: flex;

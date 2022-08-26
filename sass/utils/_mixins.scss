@@ -43,6 +43,9 @@
     background: darken($color, 1%);
     /* darken($color, 10%)*/ /* lighten($color, 10%) */
 }
+@mixin color-secondary($color: lightness-shift($second-color)) {
+    background: lighten($color, 10%);/* darken($color, 10%)*/ /* lighten($color, 10%) */
+}
 
 @mixin tablet {
     @media screen and (max-width: map-get($breakpoints, tablet)) {
