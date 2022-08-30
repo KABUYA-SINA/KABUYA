@@ -33,7 +33,7 @@
     }
 
     @else {
-        $color: lighten($first-color, 30%);
+        $color: lighten($first-color, 35%);
     }
 
     background: $color;
