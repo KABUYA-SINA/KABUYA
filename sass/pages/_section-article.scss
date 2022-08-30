@@ -12,7 +12,7 @@
     .first__image {
         position: relative;
         @extend %main-box;
-        height: 578px; /* 868 */ 
+        height: 569px; /* 868 */  /* 578 */
         margin-bottom: nth($padding, 4);
     }
 
@@ -40,7 +40,7 @@
     .second__image {
         position: relative;
         @extend %main-box;
-        height: 578px;
+        height: 569px;
         margin-bottom: nth($padding, 4); /* 2 */
     }
 
@@ -54,7 +54,7 @@
 
     .third__image {
         @extend %main-box;
-        height: 578px;
+        height: 569px;
         margin-bottom: nth($padding, 4);
     }
 
@@ -68,7 +68,7 @@
 
     .fourth__image {
         @extend %main-box;
-        height: 578px;
+        height: 569px;
         margin-bottom: nth($padding, 4);
     }
 
