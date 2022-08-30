@@ -9,6 +9,18 @@
                 }
             }
         }
+        .all-content{
+            width: 80%;
+            margin: 0 auto;
+            @include mobile{
+                width: 100%;
+                position: relative;
+                top: -38px;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                background: #f2f4f5;
+            }
+        }
 
         .first-one {
             display: flex;
