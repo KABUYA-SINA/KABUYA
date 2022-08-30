@@ -173,5 +173,6 @@
         flex-flow: column nowrap;
         align-items: stretch;
         background: rgb(247, 247, 247);
+        padding-bottom: nth($padding, 4)*2;
     }
 }
