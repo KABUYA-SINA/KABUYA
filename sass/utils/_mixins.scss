@@ -22,12 +22,12 @@
     cursor: pointer;
 
     &:hover {
-        @include btn-background;
+        background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
         color: $black-color;
     }
 }
 
-@mixin btn-background($color: $first-color) {
+@mixin btn-background($color: $first-color) { /* way box hover */
     @if (saturation($first-color) < 10%) {
         $color: saturation($first-color, 40%);
     }
