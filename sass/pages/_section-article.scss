@@ -20,7 +20,7 @@
         @extend %main-box__new;
         font-size: 16px;
         top: 10%;
-        right: 10%; 
+        right: 5%;  /* 10 */
 
         @include tablet {
             padding: nth($padding, 1) nth($padding, 2);
