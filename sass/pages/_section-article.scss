@@ -10,6 +10,7 @@
     }
 
     .first__image {
+        position: relative;
         @extend %main-box;
         height: 578px; /* 868 */ 
         margin-bottom: nth($padding, 4);
@@ -18,6 +19,8 @@
     .new {
         @extend %main-box__new;
         font-size: 16px;
+        top: 10%;
+        right: 10%; 
 
         @include tablet {
             padding: nth($padding, 1) nth($padding, 2);
@@ -35,6 +38,7 @@
     }
 
     .second__image {
+        position: relative;
         @extend %main-box;
         height: 578px;
         margin-bottom: nth($padding, 4); /* 2 */
@@ -103,6 +107,7 @@
             @include mobile {
                 height: 250px;
                 width: 90%;
+                
                 /* 230 */ 
             }
 
@@ -121,6 +126,7 @@
             @include mobile {
                 height: 250px;
                 width: 90%;
+              
                 /* 230 */
             }
 
