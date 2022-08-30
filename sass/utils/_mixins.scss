@@ -20,9 +20,12 @@
     margin-bottom: 20px;
     @include shadow;
     cursor: pointer;
+    transform: scale(1);
+    transition: all 400ms;
 
     &:hover {
         background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
+        transform: scale(1.1);
         color: $black-color;
     }
 }
