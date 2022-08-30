@@ -1,6 +1,12 @@
 .section-article {
     background: linear-gradient(287deg, rgb(245 241 241 / 0%) 50%, rgb(255 252 252) 90%);
-
+    &__boxes{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+         /* background: #f7f7f7 */
+        padding-bottom: 40px;
+    }
     i {
         cursor: pointer;
     }
@@ -89,20 +95,23 @@
     }
 
     @include tablet {
-        display: -ms-grid;
-        display: grid;
-        justify-content: center;
-        
+        &__boxes{
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            border: solid transparent; 
+        }
         & h2 {
             text-align: center;
 
             @include mobile {
+                text-align: left;
                 padding-left: nth($padding, 4);
             }
         }
 
         .first__image {
-            height: 325px; /* 390 */ /* 330 */ 
+            height: 330px; /* 390 */ /* 330 */ 
             width: 100%;
             @include mobile {
                 height: 245px; /* 250 */
@@ -111,7 +120,7 @@
             }
 
             & img {
-                height: 260px; /* 320 */
+                height: 265px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -120,7 +129,7 @@
         }
 
         .second__image {
-            height: 325px; /* 390 */
+            height: 330px; /* 390 */
             width: 100%;
             @include mobile {
                 height: 245px;
@@ -129,7 +138,7 @@
             }
 
             & img {
-                height: 260px; /* 320 */
+                height: 265px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -139,7 +148,7 @@
         }
 
         .third__image {
-            height: 325px;  /* 390 */
+            height: 330px;  /* 390 */
             width: 100%;
             @include mobile {
                 height: 245px;
@@ -147,7 +156,7 @@
             }
 
             & img {
-                height: 260px; /* 320 */
+                height: 265px; /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -156,7 +165,7 @@
         }
 
         .fourth__image {
-            height: 325px; /* 390 */
+            height: 330px; /* 390 */
             width: 100%;
             @include mobile {
                 height: 245px;
@@ -164,7 +173,7 @@
             }
 
             & img {
-                height: 260px;  /* 320 */
+                height: 265px;  /* 320 */
 
                 @include mobile {
                     height: 180px;
@@ -173,10 +182,12 @@
         }
     }
     @include mobile{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: stretch;
+        display: block;
         background: rgb(247, 247, 247);
-        padding-bottom: nth($padding, 4)*2;
+        &__boxes{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+        }
     }
 }
