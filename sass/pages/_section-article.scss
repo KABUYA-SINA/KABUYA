@@ -105,7 +105,7 @@
             height: 330px; /* 390 */ 
             width: 100%;
             @include mobile {
-                height: 250px;
+                height: 245px; /* 250 */
                 width: 90%;
                 /* 230 */ 
             }
@@ -123,7 +123,7 @@
             height: 330px; /* 390 */
             width: 100%;
             @include mobile {
-                height: 250px;
+                height: 245px;
                 width: 90%;
                 /* 230 */
             }
@@ -142,7 +142,7 @@
             height: 330px;  /* 390 */
             width: 100%;
             @include mobile {
-                height: 250px;
+                height: 245px;
                 width: 90%;
             }
 
@@ -159,7 +159,7 @@
             height: 330px; /* 390 */
             width: 100%;
             @include mobile {
-                height: 250px;
+                height: 245px;
                 width: 90%;
             }
 
