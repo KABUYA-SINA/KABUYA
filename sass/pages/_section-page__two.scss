@@ -5,7 +5,7 @@
                 @extend %others-pages;
 
                 @include mobile {
-                    height: 228px;
+                    height: 290px; /* 228 */
                 }
             }
         }
@@ -15,7 +15,7 @@
             @include mobile{
                 width: 100%;
                 position: relative;
-                top: -38px;
+                top: -60px; /* -38 */
                 border-top-left-radius: 40px;
                 border-top-right-radius: 40px;
                 background: #f2f4f5;
@@ -43,7 +43,7 @@
                 justify-content: space-between;
                 border-top-left-radius: 40px;
                 border-top-right-radius: 40px;
-                padding: nth($padding, 4) nth($padding, 4);
+                padding: nth($padding, 3) nth($padding, 4);
                 margin-top: nth($margin, 1);
                 margin-bottom: 0;
 
@@ -77,7 +77,7 @@
                 display: inline-block;
                 width: 59px;
                 border: double thin #b0f2b6;
-                margin-bottom: nth($padding, 4);
+                margin-bottom: nth($padding, 3);
             }
 
             .zone__text {
