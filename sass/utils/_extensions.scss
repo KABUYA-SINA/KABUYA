@@ -5,7 +5,7 @@
 }
 
 %main-box {
-    display: block; 
+    display: inline-block; 
     overflow: hidden; 
     @include box-radius;
     @include shadow;
