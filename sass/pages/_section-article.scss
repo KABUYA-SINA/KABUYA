@@ -118,6 +118,7 @@
             @include mobile {
                 height: 245px; /* 250 */
                 width: 90%;
+                margin-bottom: nth($margin, 4);
                 /* 230 */ 
             }
 
@@ -136,6 +137,7 @@
             @include mobile {
                 height: 245px;
                 width: 90%;
+                margin-bottom: nth($margin, 4);
                 /* 230 */
             }
 
@@ -155,6 +157,7 @@
             @include mobile {
                 height: 245px;
                 width: 90%;
+                margin-bottom: nth($margin, 4);
             }
 
             & img {
