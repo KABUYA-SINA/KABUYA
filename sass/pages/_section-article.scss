@@ -116,7 +116,7 @@
             overflow: hidden;
             @include box-radius; 
             height: 330px; /* 390 */ /* 330 */ 
-            width: 48%;
+            width: 45%;
             margin-bottom: nth($margin, 4);
             @include mobile {
                 height: 245px; /* 250 */
@@ -137,7 +137,7 @@
             overflow: hidden;
             @include box-radius; 
             height: 330px; /* 390 */
-            width: 48%;
+            width: 45%;
             margin-bottom: nth($margin, 4);
             @include mobile {
                 height: 245px;
@@ -159,7 +159,7 @@
             overflow: hidden;
             @include box-radius; 
             height: 330px;  /* 390 */
-            width: 48%;
+            width: 45%;
             @include mobile {
                 height: 245px;
                 width: 90%;
@@ -179,7 +179,7 @@
             overflow: hidden;
             @include box-radius; 
             height: 330px; /* 390 */
-            width: 48%;
+            width: 45%;
 
             @include mobile {
                 height: 245px;
