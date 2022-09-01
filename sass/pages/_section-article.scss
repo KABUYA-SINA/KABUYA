@@ -115,10 +115,10 @@
         .first__image {
             height: 330px; /* 390 */ /* 330 */ 
             width: 48%;
+            margin-bottom: nth($margin, 4);
             @include mobile {
                 height: 245px; /* 250 */
                 width: 90%;
-                margin-bottom: nth($margin, 4);
                 /* 230 */ 
             }
 
@@ -134,10 +134,10 @@
         .second__image {
             height: 330px; /* 390 */
             width: 48%;
+            margin-bottom: nth($margin, 4);
             @include mobile {
                 height: 245px;
                 width: 90%;
-                margin-bottom: nth($margin, 4);
                 /* 230 */
             }
 
@@ -172,6 +172,7 @@
         .fourth__image {
             height: 330px; /* 390 */
             width: 48%;
+            
             @include mobile {
                 height: 245px;
                 width: 90%;
