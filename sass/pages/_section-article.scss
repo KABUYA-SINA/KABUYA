@@ -3,7 +3,7 @@
     &__boxes{
         display: flex;
         flex-direction: row;   /* background: #f7f7f7 */
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-bottom: nth($margin, 4)*3;
     }
     i {
@@ -18,8 +18,9 @@
         position: relative;
         @extend %main-box;
         height: 569px; /* 868 */  /* 578 */
-        width: 24%; 
-        /* margin-bottom: nth($padding, 4) */
+        width: 24%;
+        @include anime-boxes; 
+
     }
 
     .new {
@@ -48,7 +49,7 @@
         @extend %main-box;
         height: 569px;
         width: 24%; 
-        /* margin-bottom: nth($padding, 4) */ /* 2 */
+        @include anime-boxes; 
     }
 
     .second__image--box {
@@ -63,7 +64,7 @@
         @extend %main-box;
         height: 569px;
         width: 24%; 
-        /* margin-bottom: nth($padding, 4) */
+        @include anime-boxes; 
     }
 
     .third__image--box {
@@ -78,7 +79,7 @@
         @extend %main-box;
         height: 569px;
         width: 24%;
-        /* margin-bottom: nth($padding, 4) */
+        @include anime-boxes; 
     }
 
     .fourth__image--box {

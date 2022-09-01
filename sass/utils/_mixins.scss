@@ -66,3 +66,11 @@
     position: relative;
     opacity: 1;
 }
+@mixin anime-boxes{
+    transform: scale(1);
+    transition: transform 400ms;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+}
