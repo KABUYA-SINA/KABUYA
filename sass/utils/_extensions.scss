@@ -6,8 +6,6 @@
 
 %main-box {
     display: inline-block; 
-    overflow: hidden; 
-    @include box-radius;
     @include shadow;
     width: 90%;
 
