@@ -68,7 +68,7 @@
 }
 @mixin anime-boxes{
     transform: scale(1);
-    transition: transform 400ms;
+    transition: transform 400ms; /* all */
 
         &:hover {
             transform: scale(1.05);
