@@ -103,7 +103,7 @@ button {
     opacity: 1;
   }
 }
-/* spinner */
+/* Loader - spinner */
 .loader {
   position: fixed;
   /* z-index99999px */
