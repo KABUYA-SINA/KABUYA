@@ -65,7 +65,9 @@
             text-align: left;
         }
 }
+
 /* way boxes hover */ 
+
 @mixin btn-background($color: $first-color) {
     @if (saturation($first-color) < 10%) {
         $color: saturation($first-color, 40%);
@@ -77,6 +79,8 @@
 
     background: $color;
 }
+
+
 /* way 1st icon */ 
 
 @mixin color($color: lightness-shift($first-color)){
