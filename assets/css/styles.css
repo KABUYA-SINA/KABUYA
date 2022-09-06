@@ -209,13 +209,13 @@ button {
 .third-anime {
   position: relative;
   opacity: 1;
-  animation: movement 2000ms ease-in-out;
+  animation: movement 2200ms ease-in-out;
 }
 
 .fourth-anime {
   position: relative;
   opacity: 1;
-  animation: movement 2400ms ease-in-out;
+  animation: movement 2600ms ease-in-out;
 }
 
 @keyframes movement {
