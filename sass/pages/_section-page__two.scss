@@ -4,7 +4,7 @@ section {
             img {
                 height: 290px;
                 width: 100%;
-                object-fit: cover; /* 228 */
+                object-fit: cover; 
                 @include tablet {
                    @include others-pages; 
                 }
@@ -98,7 +98,7 @@ section {
                 @include shadow;
                 @include box-radius;
                 margin-bottom: nth($margin, 2);
-                /* background#b0f2b6 */
+                
 
                 &:hover .zone__text--anime i {
                     transform: rotate(1turn);
@@ -115,9 +115,9 @@ section {
 
 
                 &--move {
-                    width: 100%; /* 91 */
+                    width: 100%; 
                     transform-origin: left;
-                    transform: scaleX(1.15); /* 1.12 *//* 1.1019, 0.98 */ /* 1.15 */
+                    transform: scaleX(1.15); 
                     transition: all 750ms ease-in-out;
                     visibility: visible;
                     overflow: hidden;
@@ -131,11 +131,11 @@ section {
                     }
                 }
                 &--move:hover {
-                    transform: scale(1, 1);  /*.95, 1 */ /*.98 */ 
+                    transform: scale(1, 1);  
                 }
 
                 &--move:active{
-                    transform: scale(1, 1); /* .98 */
+                    transform: scale(1, 1); 
                 }
 
 
