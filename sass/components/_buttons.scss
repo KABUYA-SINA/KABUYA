@@ -1,6 +1,5 @@
 .btn {
     @include btn;
     background: linear-gradient(to top left, rgba(209, 73, 245, 1), rgba(235, 176, 211, 1));
-    /* linear-gradient(to top left, rgba(209, 73, 245, 1.0), rgba(235, 176, 211, 1.0)) */
     cursor: pointer; 
 }
