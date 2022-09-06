@@ -84,6 +84,7 @@
 @mixin color-secondary($color: lightness-shift($orangeRed)) {
     background: lighten($color, 15%);
 }
+/* breakponits */
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
@@ -95,7 +96,7 @@
         @content;
     }
 }
-
+/* animes */ 
 @mixin anime-base {
     position: relative;
     opacity: 1;
