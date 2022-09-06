@@ -1,67 +1,7 @@
 .way {
     /* background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f44336 90%) */
     /* background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f436b138 90%)*/
-    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgb(243 30 30 / 38%) 90%); 
 
-    &-one {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    &__box {
-        cursor: pointer;
-        @include box-radius;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: nth($margin, 3);
-        margin-bottom: nth($margin, 3);
-
-        &:hover {
-            color: $first-color;
-
-            h3 {
-                color: $black-color;
-            }
-        }
-        &:active {
-            color: $black-color;
-                
-            h3 {
-                color: $first-color;
-            }
-        }
-
-        .icons {
-            border-radius: 54%;
-            width: 23px;
-            color: $white-color;
-            background-color: $first-color;
-
-            @include mobile {
-                position: relative;
-                left: -10px;
-                @include color($first-color); 
-            }
-        }
-
-        .icons__marge {
-            /* img 2ieme */
-            margin-left: nth($margin, 2);
-            margin-right: nth($margin, 2);
-
-            @include mobile {
-                margin-right: nth($margin, 4);
-            }
-        }
-    }
-
-    @include tablet {
-        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f443365c 90%);
-    }
-
-    @include mobile {
-        background-image: none;
         display: inline-table;
         width: 90%;
 
@@ -71,7 +11,7 @@
 
         &__box {
             @include shadow;
-            justify-content: flex-start;
+            justify-content: center;
         }
 
         &-one {
@@ -88,5 +28,93 @@
                 color: $black-color;
             }
         }
+
+    &__box {
+        cursor: pointer;
+        @include box-radius;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: nth($margin, 3);
+        margin-bottom: nth($margin, 3);
+        background: #F8F8F8;
+
+        &:hover {
+            .icons__marge{
+                color: $first-color;
+            }
+            
+
+            h3 {
+                color: $black-color;
+            }
+        }
+        &:active {
+            .icons__marge{
+                color: $black-color;
+            }
+            
+                
+            h3 {
+                color: $first-color;
+            }
+        }
+
+        .icons {
+            border-radius: 54%;
+            width: 23px;
+            color: $white-color;
+            position: relative;
+            left: -10px;
+             @include color($first-color); 
+        }
+
+        .icons__marge {
+            /* img 2ieme */
+            margin-left: nth($margin, 2);
+            margin-right: nth($margin, 4);
+            color: #808080;
+        }
     }
+
+}
+@include tablet{
+    .way{
+        width: 100%; 
+        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f443365c 90%);
+        & h2{
+            text-align: center; 
+        }
+        &-one {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+       }
+       &__box{
+           justify-content: center;
+           padding: nth($padding, 4);
+           box-shadow: none;
+           background: none; 
+           &:hover{
+            background: none; 
+           } 
+       }
+       .icons__marge{
+        color: $black-color; 
+       }
+
+
+    }
+
+}
+@include ordi{
+    .way{
+        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgb(243 30 30 / 38%) 90%); 
+        width: 100%; 
+    }
+    .icon__marge{
+        margin-right: nth($margin, 2);
+    }
+
 }

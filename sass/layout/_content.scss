@@ -1,22 +1,15 @@
 #content {
-    max-width: 1440px;
     margin: 0 auto;
     text-align: center;
     animation: fade-in-top 1s ease 0s 1 normal none;
-    background: linear-gradient(293deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.4) 90%);
-
-    @include tablet {
-        background: linear-gradient(60deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.4) 90%);
+    
+    p,
+    a,
+    li {
+        font-size: 16px;
     }
-
-    @include mobile {
-        background: #F2F4F5;
-
-        p,
-        a,
-        li {
-            font-size: 16px;
-        }
+    section{
+        background: #f2f4f5;
     }
 
 }

@@ -1,35 +1,12 @@
 /* footer */
 footer {
-    padding: nth($padding, 4);
-    margin-top: nth($margin, 4)+5;
-    @include shadow;
-    @include color-secondary($orangeRed);
-    /* background: #f44336 */ 
-
-    & li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        i {
-            margin-right: 10px;
-        }
-    }
-
-    & a {
-        color: $black-color;
-    }
-
-    @include tablet {
-        background: #edafab;
-    }
-
-    @include mobile {
         background: #2f2e2e; /* $black, #696969 */
         color: $white-color;
-        padding: nth($padding, 4)+5;
+        padding-left: nth($padding, 4)+5;
+        padding-right: nth($padding, 4)+5;
+        padding-top: nth($padding, 2); 
+        padding-bottom: nth($padding, 4)*2; 
         box-shadow: none;
-        margin-top: nth($margin, 4)-40; /* -40 */
 
         a {
             color: $white-color;
@@ -37,11 +14,41 @@ footer {
 
         & h2 {
             text-align: start;
-            margin-bottom: nth($margin, 3);
         }
 
         & li {
+            display: flex; 
+            align-items: center;
             justify-content: flex-start;
+        }
+        & i{
+            margin-right: 15px;
+        }
+
+
+    @include tablet {
+        background: #edafab;
+        color: $black-color; 
+        @include shadow; 
+        & h2{
+            text-align: center; 
+        }
+        & li {
+
+           justify-content: center;
+
+        } 
+
+
+        & a {
+             color: $black-color;
         }
     }
 }
+@include ordi{
+    footer{
+         @include color-secondary($orangeRed);
+    }
+        
+}
+

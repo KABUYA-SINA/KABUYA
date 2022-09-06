@@ -1,4 +1,9 @@
 /* MIXIN */
+@mixin others-pages {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
 @mixin shadow {
     box-shadow: 0px 5px 10px #999;
 }
@@ -8,7 +13,32 @@
 }
 
 @mixin title-font {
-    font-family: 'Shrikhand Regular';
+    font-family: 'Shrikhand';
+}
+@mixin main-box {
+    display: inline-block; 
+    @include shadow;
+    width: 90%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+@mixin main-box__new {
+    padding: nth($padding, 1) nth($padding, 2);
+    background-color: #a0f1da;  /*  #15DEA5 */ /* #c0e9c3 */
+    color: #24873e; /* #1f7736 */ /* #318e73 */
+    font-weight: bold;
+    border-radius: 2px; 
+    position: absolute;
+}
+
+@mixin main-box__text {
+    display: flex;
+    justify-content: space-between;
+    padding: nth($padding, 1) nth($padding, 3) nth($padding, 2) nth($padding, 2);
+    margin-top: nth($margin, 1)-12;
 }
 
 @mixin btn {
@@ -29,8 +59,14 @@
         color: $black-color;
     }
 }
+@mixin text-boxes{
+    @include main-box__text;
 
-@mixin btn-background($color: $first-color) { /* way box hover */
+        &--text {
+            text-align: left;
+        }
+}
+@mixin btn-background($color: $first-color) {
     @if (saturation($first-color) < 10%) {
         $color: saturation($first-color, 40%);
     }
@@ -47,17 +83,17 @@
     /* darken($color, 10%)*/ /* lighten($color, 10%) */
 }
 @mixin color-secondary($color: lightness-shift($orangeRed)) {
-    background: lighten($color, 15%);/* darken($color, 10%)*/ /* lighten($color, 10%) */
+    background: lighten($color, 15%);
+    /* darken($color, 10%)*/ /* lighten($color, 10%) */
 }
-
 @mixin tablet {
-    @media screen and (max-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }
 
-@mixin mobile {
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
+@mixin ordi {
+    @media screen and (min-width: map-get($breakpoints, ordi)) {
         @content;
     }
 }

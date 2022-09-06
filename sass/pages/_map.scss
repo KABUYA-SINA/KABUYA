@@ -1,30 +1,38 @@
-.map {
+.map{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: nth($padding, 3);
-
+    background: hsl(184, 6%, 95%); 
     & i {
         margin-right: 10px;
     }
-
-    @include mobile {
-        background: hsl(184, 6%, 95%);
-    }
 }
-
 .first-message {
-    .marge__title {
-        margin-top: nth($margin, 3);
-        margin-bottom: nth($margin, 3);
-    }
-
-    @include mobile {
-        background: linear-gradient(359deg, rgb(247 247 247) 1%, rgb(255, 255, 255) 110%);
-
-        .break-mobile {
-            display: flex;
-            justify-content: center;
-        }
-    }
+    background: linear-gradient(359deg, rgb(247 247 247) 1%, rgb(255, 255, 255) 110%);
 }
+.marge__title {
+    margin-top: nth($margin, 2);
+    margin-bottom: nth($margin, 2);
+}
+.break-mobile {
+    display: flex;
+    justify-content: center;
+}
+@include tablet{
+    .map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: nth($padding, 3);
+        background: none; 
+    }
+    .first-message {
+    background: none;
+    }
+    .break-mobile{
+        display: inline-block; 
+    }
+
+}
+

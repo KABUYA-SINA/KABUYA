@@ -1,93 +1,174 @@
 .section-article {
-    background: linear-gradient(287deg, rgb(245 241 241 / 0%) 50%, rgb(255 252 252) 90%);
+    display: block;
+    background: rgb(247, 247, 247);
     &__boxes{
-        display: flex;
-        flex-direction: row;   /* background: #f7f7f7 */
-        justify-content: space-evenly;
-        margin-bottom: nth($margin, 4)*3;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
     }
-    i {
+    & i {
         cursor: pointer;
     }
 
-    h2 {
+    & h2 {
         margin-bottom: nth($margin, 3);
+        text-align: left; 
+        padding-left: nth($padding, 4); 
     }
+.new {
+    @include main-box__new;
+    font-size: 13px;
+    top: 10%;
+    right: 5%;  /* 10 */
+}
 
-    .first__image {
-        position: relative;
-        @extend %main-box;
-        height: 569px; /* 868 */  /* 578 */
-        width: 24%;
+    .first__image{
+        position: relative; 
+        overflow: hidden; 
+        @include main-box; 
         @include anime-boxes; 
+        @include box-radius; 
+        margin-bottom: 20px;  
+        height: 245px;  
+        img{
+           height: 180px;
+       }
+        
+    }
+    .second__image{
+        position: relative; 
+        overflow: hidden;
+        @include main-box; 
+        @include box-radius; 
+        @include anime-boxes;
+        margin-bottom: 20px; 
+        height: 245px;  
+        img{
+            height: 180px;
+        }
 
     }
+    .third__image{
+        overflow: hidden;
+         @include main-box; 
+         @include box-radius; 
+         @include anime-boxes;
+         margin-bottom: 20px; 
+        height: 245px; 
+        img{
+            height: 180px;
+        }
 
-    .new {
-        @extend %main-box__new;
-        font-size: 16px;
-        top: 10%;
-        right: 5%;  /* 10 */
+    }
+    .fourth__image{
+        overflow: hidden;
+         @include main-box; 
+         @include box-radius; 
+         @include anime-boxes;
+         margin-bottom: 20px;
+        height: 245px; /* 250 */
+                /* 230 */ 
+        img{
+            height: 180px;
+        }
 
-        @include tablet {
-            padding: nth($padding, 1) nth($padding, 2);
-            margin: nth($margin, 1);
-            /*marg-lef60px*/
+    }
+    .first__image--box, .second__image--box,
+    .third__image--box, .fourth__image--box{
+        @include text-boxes; 
+    } 
+}
+
+@include tablet{
+    .section-article{
+        & h2{
+            text-align: center; 
+        }
+        &__boxes{
+            padding: 20px; 
+            flex-flow: wrap;
+            justify-content: space-evenly;
+        }
+        .first__image {
+
+            height: 330px; /* 390 */ /* 330 */ 
+            width: 45%;
+            margin-bottom: nth($margin, 4);
+
+            & img {
+                height: 265px; /* 320 */
+            }
+        }
+
+        .second__image {
+ 
+            height: 330px; /* 390 */
+            width: 45%;
+            margin-bottom: nth($margin, 4);
+
+            & img {
+                height: 265px; /* 320 */
+            }
+        }
+
+        .third__image {
+
+            height: 330px;  /* 390 */
+            width: 45%;
+
+            & img {
+                height: 265px; /* 320 */
+            }
+        }
+
+        .fourth__image {
+            height: 330px; /* 390 */
+            width: 45%;
+
+            & img {
+                height: 265px;  /* 320 */
+            }
         }
     }
 
-    .first__image--box {
-        @extend %main-box__text;
+}
+@include ordi{
+    .section-article{
+        &__boxes{
+            flex-direction: row;
+            margin-bottom: nth($margin, 4)*3;
+        }
+         .first__image--box {
+        @include main-box__text;
 
         &--text {
             text-align: left;
         }
+    }
+    .first__image {
+        height: 569px; /* 868 */  /* 578 */
+        width: 24%;
+        border-radius: 0;
     }
 
     .second__image {
-        position: relative;
-        @extend %main-box;
         height: 569px;
         width: 24%; 
-        @include anime-boxes; 
-    }
-
-    .second__image--box {
-        @extend %main-box__text;
-
-        &--text {
-            text-align: left;
-        }
+        border-radius: 0;
     }
 
     .third__image {
-        @extend %main-box;
         height: 569px;
-        width: 24%; 
-        @include anime-boxes; 
-    }
-
-    .third__image--box {
-        @extend %main-box__text;
-
-        &--text {
-            text-align: left;
-        }
+        width: 24%;  
+        border-radius: 0;
     }
 
     .fourth__image {
-        @extend %main-box;
         height: 569px;
         width: 24%;
-        @include anime-boxes; 
-    }
-
-    .fourth__image--box {
-        @extend %main-box__text;
-
-        &--text {
-            text-align: left;
-        }
+        border-radius: 0;
     }
 
     /* ALL IMG HEIGHT */
@@ -97,115 +178,6 @@
     .first__image img {
         height: 500px; /* 800 */
     }
-
-    @include tablet {
-        &__boxes{
-            flex-flow: wrap;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        & h2 {
-            text-align: center;
-            margin-bottom: nth($margin, 3)*2;
-            padding: nth($padding, 4);
-
-            @include mobile {
-                text-align: left;
-                padding: nth($padding, 2) nth($padding, 4);
-                margin: 0;
-            }
-        }
-
-        .first__image {
-            overflow: hidden;
-            @include box-radius; 
-            height: 330px; /* 390 */ /* 330 */ 
-            width: 45%;
-            margin-bottom: nth($margin, 4);
-            @include mobile {
-                height: 245px; /* 250 */
-                width: 90%;
-                /* 230 */ 
-            }
-
-            & img {
-                height: 265px; /* 320 */
-
-                @include mobile {
-                    height: 180px;
-                }
-            }
-        }
-
-        .second__image {
-            overflow: hidden;
-            @include box-radius; 
-            height: 330px; /* 390 */
-            width: 45%;
-            margin-bottom: nth($margin, 4);
-            @include mobile {
-                height: 245px;
-                width: 90%;
-                /* 230 */
-            }
-
-            & img {
-                height: 265px; /* 320 */
-
-                @include mobile {
-                    height: 180px;
-                    /* 160 */
-                }
-            }
-        }
-
-        .third__image {
-            overflow: hidden;
-            @include box-radius; 
-            height: 330px;  /* 390 */
-            width: 45%;
-            @include mobile {
-                height: 245px;
-                width: 90%;
-                margin-bottom: nth($margin, 4);
-            }
-
-            & img {
-                height: 265px; /* 320 */
-
-                @include mobile {
-                    height: 180px;
-                }
-            }
-        }
-
-        .fourth__image {
-            overflow: hidden;
-            @include box-radius; 
-            height: 330px; /* 390 */
-            width: 45%;
-
-            @include mobile {
-                height: 245px;
-                width: 90%;
-            }
-
-            & img {
-                height: 265px;  /* 320 */
-
-                @include mobile {
-                    height: 180px;
-                }
-            }
-        }
     }
-    @include mobile{
-        display: block;
-        background: rgb(247, 247, 247);
-        &__boxes{
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-        }
-    }
+
 }

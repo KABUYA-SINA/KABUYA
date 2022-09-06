@@ -1,18 +1,27 @@
-header {
-    width: 100%;
-    @include shadow;
-    @include color-secondary($orangeRed);
-    /* background: #f44336 */
-    /* background: linear-gradient(to left top, rgb(209, 73, 245), rgb(235, 176, 211))  */
-    @include tablet{
-        background: #edafab;
-    }
-    @include mobile {
-        background: $white-color;
-        box-shadow: 0px 1px 5px #cbcaca;
 
+header { 
+    box-shadow: 0px 0px 5px 2px #999;
+    margin-bottom: nth($margin, 1)-1; 
+    background: $white-color; 
+    width: 100%; 
         img {
-            width: 50%;
-        }
+       width: 50%;
     }
 }
+@include tablet{
+    header { 
+    @include shadow; /* box-shadow: 0px 1px 5px #cbcaca */
+    background: #edafab;
+        img {
+       width: 15%;
+    }
+}
+
+}
+@include ordi{
+    header { 
+       
+        @include color-secondary($orangeRed);
+    }
+}
+

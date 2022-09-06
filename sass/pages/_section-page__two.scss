@@ -1,45 +1,31 @@
-    section {
+section {
 
         .first-image {
             img {
-                @extend %others-pages;
-
-                @include mobile {
-                    height: 290px; /* 228 */
+                height: 290px;
+                width: 100%;
+                object-fit: cover; /* 228 */
+                @include tablet {
+                   @include others-pages; 
                 }
             }
         }
         .all-content{
-            width: 80%;
-            margin: 0 auto;
-            @include mobile{
-                width: 100%;
-                position: relative;
-                top: -60px; /* -38 */
-                border-top-left-radius: 40px;
-                border-top-right-radius: 40px;
-                background: #f2f4f5;
-                border: solid transparent;
-            }
+            width: 100%;
+            position: relative;
+            top: -60px; /* -38 */
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            background: #f2f4f5; 
+            border: solid transparent;
+            @include tablet{
+                border-radius: 0; 
+            } 
         }
 
         .first-one {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: nth($margin, 2);
-            margin-bottom: nth($margin, 2);
-
-            & i {
-                margin-left: nth($padding, 1);
-
-                @include mobile {
-                    font-size: 25px;
-                    margin: 0;
-                }
-            }
-
-            @include mobile {
+                display: flex;
+                align-items: center;
                 justify-content: space-between;
                 border-top-left-radius: 40px;
                 border-top-right-radius: 40px;
@@ -49,23 +35,39 @@
 
                 h1 {
                     font-size: 33px;
+                    font-family: "Shrikhand", sans-serif; 
                 }
+
+
+            & i {
+                font-size: 25px;
+                margin: 0;
+
+                @include tablet {
+                    margin-left: nth($padding, 4);
+                }
+            }
+
+            @include tablet {
+            justify-content: center;
+            margin-top: nth($margin, 2);
+            margin-bottom: nth($margin, 2);
             }
         }
 
         .first-bloc {
-            display: inline-block;
+            display: block;
 
-            @include mobile {
-                display: block;
+            @include tablet {
+                display: inline-block;
             }
         }
 
         .first-bloc__box {
-            display: table-caption;
+            display: block;
 
-            @include mobile {
-                display: block;
+            @include tablet {
+                display: table-caption;
             }
         }
 
@@ -73,11 +75,21 @@
         .second-in,
         .last-in {
 
+            & h2{
+                text-align: start; 
+                @include tablet{
+                    text-align: center; 
+                }
+            }
+
             .line {
                 display: inline-block;
                 width: 59px;
                 border: double thin #b0f2b6;
                 margin-bottom: nth($padding, 3);
+                @include tablet {
+                    text-align: center; 
+                }
             }
 
             .zone__text {
@@ -93,47 +105,39 @@
                     transition-duration: 1.5s;
                     transition-delay: 150ms;
                 }
+
                 &:active .zone__text--anime i {
-                    transform: rotate(0deg);
+                    transform: rotate(0deg); /* 360 */
                     transition-duration: 1.5s;
                     transition-delay: 100ms;
                 }
 
+
+
                 &--move {
                     width: 100%; /* 91 */
                     transform-origin: left;
-                    transform: scaleX(1.15); /* 1.12 */
-                    /* 1.1019, 0.98 */
+                    transform: scaleX(1.15); /* 1.12 *//* 1.1019, 0.98 */ /* 1.15 */
                     transition: all 750ms ease-in-out;
                     visibility: visible;
                     overflow: hidden;
                     background: $white-color;
                     cursor: pointer;
                     text-align: left;
-                    padding: nth($padding, 2);
+                    padding: nth($padding, 2); 
 
-                    @include mobile {
-                        & {
-                            width: 100%; /* 90 */
-                            transform: scaleX(1.15); /* 1.12 */
-                            .break-this {
-                                display: flex;
-                            }
-                        }
+                    .break-this {
+                        display: flex;
                     }
                 }
                 &--move:hover {
-                transform: scale(1, 1);  /*.95, 1 */ /*.98 */ 
-                    @include mobile {
-                        transform: scale(1 , 1);
-                    }
+                    transform: scale(1, 1);  /*.95, 1 */ /*.98 */ 
                 }
+
                 &--move:active{
                     transform: scale(1, 1); /* .98 */
-                    @include mobile {
-                        transform: scale(1, 1); /* .97 */
-                    }
                 }
+
 
 
                 .text-overflow {
@@ -158,29 +162,24 @@
                 }
 
                 .zone__text--anime {
-                    width: 15%; /* 9 */ /* 10 */ 
+                    width: 15%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     background-color: #b0f2b6;
                     color: $white-color;
-
-                    @include mobile {
-                        width: 15%; /* 6 */ /* 10 */
-                        /* max-w10 */
-                    }
                 }
             }
+            text-align: start;
+            @include tablet{
+                    text-align: center; 
+            }
+            padding: nth($padding, 3);
 
-            @include mobile {
-                /* box-first-in.....*/
-                text-align: start;
-                padding: nth($padding, 3);
-
-                .marge__title {
+            .marge__title {
                     margin-top: 0;
-                }
+                    font-weight: 400;
             }
         }
 
@@ -190,4 +189,5 @@
             padding-top: 15px;
             padding-bottom: 15px;
         }
-    }
+    
+}
