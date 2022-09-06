@@ -10,7 +10,7 @@ header {
 }
 @include tablet{
     header { 
-    @include shadow; /* box-shadow: 0px 1px 5px #cbcaca */
+    @include shadow; 
     background: #edafab;
         img {
        width: 15%;
