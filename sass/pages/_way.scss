@@ -79,7 +79,6 @@
 @include tablet{
     .way{
         width: 100%; 
-        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, #f443365c 90%);
         & h2{
             text-align: center; 
         }
@@ -108,7 +107,6 @@
 }
 @include ordi{
     .way{
-        background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgb(243 30 30 / 38%) 90%); 
         width: 100%; 
     }
     .icon__marge{

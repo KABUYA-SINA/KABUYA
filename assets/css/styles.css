@@ -449,7 +449,6 @@ footer i {
 @media screen and (min-width: 992px) {
   .way {
     width: 100%;
-    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgba(244, 67, 54, 0.3607843137) 90%);
   }
   .way h2 {
     text-align: center;
@@ -475,7 +474,6 @@ footer i {
 }
 @media screen and (min-width: 1440px) {
   .way {
-    background: linear-gradient(173deg, rgba(10, 10, 10, 0) 50%, rgba(243, 30, 30, 0.38) 90%);
     width: 100%;
   }
   .icon__marge {
