@@ -21,7 +21,7 @@
     @include main-box__new;
     font-size: 13px;
     top: 10%;
-    right: 5%;  /* 10 */
+    right: 5%;
 }
 
     .first__image{
@@ -68,8 +68,7 @@
          @include box-radius; 
          @include anime-boxes;
          margin-bottom: 20px;
-        height: 245px; /* 250 */
-                /* 230 */ 
+        height: 245px; 
         img{
             height: 180px;
         }
@@ -93,42 +92,41 @@
         }
         .first__image {
 
-            height: 330px; /* 390 */ /* 330 */ 
+            height: 330px;  
             width: 45%;
             margin-bottom: nth($margin, 4);
 
             & img {
-                height: 265px; /* 320 */
+                height: 265px;
             }
         }
 
         .second__image {
  
-            height: 330px; /* 390 */
-            width: 45%;
+            height: 330px; 
             margin-bottom: nth($margin, 4);
 
             & img {
-                height: 265px; /* 320 */
+                height: 265px; 
             }
         }
 
         .third__image {
 
-            height: 330px;  /* 390 */
+            height: 330px;  
             width: 45%;
 
             & img {
-                height: 265px; /* 320 */
+                height: 265px; 
             }
         }
 
         .fourth__image {
-            height: 330px; /* 390 */
+            height: 330px; 
             width: 45%;
 
             & img {
-                height: 265px;  /* 320 */
+                height: 265px;  
             }
         }
     }
@@ -148,8 +146,7 @@
         }
     }
     .first__image {
-        height: 569px; /* 868 */  /* 578 */
-        width: 24%;
+        height: 569px; 
         border-radius: 0;
     }
 
@@ -176,7 +173,7 @@
     .third__image img,
     .second__image img,
     .first__image img {
-        height: 500px; /* 800 */
+        height: 500px; 
     }
     }
 
