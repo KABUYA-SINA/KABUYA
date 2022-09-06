@@ -1,3 +1,4 @@
+/* FUNCTION */
 @function lightness-shift($color) {
     @if (lightness($color) < 25%) {
         @return lighten($color, 10%);
