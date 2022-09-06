@@ -17,12 +17,12 @@
         text-align: left; 
         padding-left: nth($padding, 4); 
     }
-.new {
-    @include main-box__new;
-    font-size: 13px;
-    top: 10%;
-    right: 5%;
-}
+    .new {
+        @include main-box__new;
+        font-size: 13px;
+        top: 10%;
+        right: 5%;
+    }
 
     .first__image{
         position: relative; 
