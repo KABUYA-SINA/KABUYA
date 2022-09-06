@@ -104,6 +104,7 @@
         .second__image {
  
             height: 330px; 
+            width: 45%;
             margin-bottom: nth($margin, 4);
 
             & img {
@@ -147,6 +148,7 @@
     }
     .first__image {
         height: 569px; 
+        width: 24%;
         border-radius: 0;
     }
 

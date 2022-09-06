@@ -638,6 +638,7 @@ footer i {
   }
   .section-article .second__image {
     height: 330px;
+    width: 45%;
     margin-bottom: 20px;
   }
   .section-article .second__image img {
@@ -677,6 +678,7 @@ footer i {
   }
   .section-article .first__image {
     height: 569px;
+    width: 24%;
     border-radius: 0;
   }
   .section-article .second__image {
