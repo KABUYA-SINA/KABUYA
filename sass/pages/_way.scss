@@ -1,5 +1,4 @@
 .way {
-
         display: inline-table;
         width: 90%;
 
@@ -41,7 +40,6 @@
             .icons__marge{
                 color: $first-color;
             }
-            
 
             h3 {
                 color: $black-color;
@@ -52,7 +50,6 @@
                 color: $black-color;
             }
             
-                
             h3 {
                 color: $first-color;
             }
@@ -74,7 +71,6 @@
             color: #808080;
         }
     }
-
 }
 @include tablet{
     .way{
@@ -100,10 +96,7 @@
        .icons__marge{
         color: $black-color; 
        }
-
-
     }
-
 }
 @include ordi{
     .way{
@@ -112,5 +105,4 @@
     .icon__marge{
         margin-right: nth($margin, 2);
     }
-
 }
