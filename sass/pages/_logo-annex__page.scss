@@ -26,7 +26,6 @@
         }
 
         @include ordi {   
-        /* background: #f44336 */
         @include color-secondary($orangeRed);
         }
     }
