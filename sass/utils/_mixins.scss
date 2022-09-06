@@ -65,6 +65,7 @@
             text-align: left;
         }
 }
+/* way boxes hover */ 
 @mixin btn-background($color: $first-color) {
     @if (saturation($first-color) < 10%) {
         $color: saturation($first-color, 40%);
@@ -76,6 +77,7 @@
 
     background: $color;
 }
+/* way 1st icon */ 
 
 @mixin color($color: lightness-shift($first-color)){
     background: darken($color, 1%);
@@ -84,7 +86,9 @@
 @mixin color-secondary($color: lightness-shift($orangeRed)) {
     background: lighten($color, 15%);
 }
+
 /* breakponits */
+
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
@@ -96,7 +100,9 @@
         @content;
     }
 }
+
 /* animes */ 
+
 @mixin anime-base {
     position: relative;
     opacity: 1;
