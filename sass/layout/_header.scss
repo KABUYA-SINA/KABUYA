@@ -10,18 +10,11 @@ header {
 }
 @include tablet{
     header { 
-    @include shadow; 
-    background: #edafab;
         img {
        width: 15%;
     }
 }
 
 }
-@include ordi{
-    header { 
-       
-        @include color-secondary($orangeRed);
-    }
-}
+
 
