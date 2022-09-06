@@ -28,8 +28,6 @@ footer {
 
 
     @include tablet {
-        background: #edafab;
-        color: $black-color; 
         @include shadow; 
         & h2{
             text-align: center; 
@@ -39,17 +37,7 @@ footer {
            justify-content: center;
 
         } 
-
-
-        & a {
-             color: $black-color;
-        }
     }
 }
-@include ordi{
-    footer{
-         @include color-secondary($orangeRed);
-    }
-        
-}
+
 
