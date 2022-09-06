@@ -46,8 +46,8 @@ ul {
   list-style-type: none;
 }
 
-h1, .break-mobile,
-.break-this {
+h1,
+.break-mobile {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -59,7 +59,7 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
+h3, .break-this {
   font-size: 18px; /* 18 */
   line-height: normal;
   font-family: "Roboto", sans-serif;
