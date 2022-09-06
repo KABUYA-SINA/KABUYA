@@ -1,4 +1,4 @@
-/* keyframes */
+/* KEYFRAMES */
 @keyframes fade-in-top {
     0% {
         transform: translateY(-50px);
@@ -107,7 +107,7 @@
     }
 }
 
-/* box animations 4 pages */
+/* boxes animation 4 pages */
 .one-anime {
     @include anime-base;
     animation: movement 1500ms ease-in-out;
