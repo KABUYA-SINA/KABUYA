@@ -50,7 +50,8 @@
     @include shadow;
     cursor: pointer;
     transform: scale(1);
-    transition: all 400ms;
+    transition: all 400ms; /* transform 400ms,
+        background-color 250ms 150ms */
 
     &:hover {
         background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
