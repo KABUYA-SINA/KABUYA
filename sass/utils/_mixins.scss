@@ -42,23 +42,43 @@
 }
 
 @mixin btn {
-    padding: nth($padding, 3);
-    color: $white-color;
+    position: relative;
+    z-index: 1;
     @include box-radius;
+    @include shadow;
+    padding: nth($padding, 3);
     margin-top: 20px;
     margin-bottom: 20px;
-    @include shadow;
-    cursor: pointer;
+    color: $white-color;
+    background: linear-gradient(to top left, rgba(209, 73, 245, 1), rgba(235, 176, 211, 1));
     transform: scale(1);
-    transition: all 400ms; /* transform 400ms,
-        background-color 250ms 150ms */
+    transition: transform 400ms;
 
     &:hover {
-        background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
         transform: scale(1.1);
         color: $black-color;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        @include box-radius;
+        transition: opacity 250ms; 
+        background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
     }
 }
+
+/* background-color: lighten($first-color, 5); */
 @mixin text-boxes{
     @include main-box__text;
 
