@@ -137,6 +137,11 @@ section {
                 &--move:active{
                     transform: scale(1, 1); 
                 }
+                @include tablet{
+                    .break-three{
+                        display: flex;
+                    }
+                }
 
 
 
