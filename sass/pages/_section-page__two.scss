@@ -104,7 +104,7 @@ section {
                 &:hover .zone__text--anime i {
                     transform: rotate(1turn);
                     transition-duration: 1.5s;
-                    transition-delay: 150ms;
+                    transition-delay: 100ms; 
                 }
 
                 &:active .zone__text--anime i {
@@ -118,7 +118,7 @@ section {
                 &--move {
                     width: 100%; 
                     transform-origin: left;
-                    transform: scaleX(1.16); 
+                    transform: scaleX(1.185); /* 1.16 */
                     transition: all 750ms ease-in-out;
                     visibility: visible;
                     overflow: hidden;
@@ -168,7 +168,7 @@ section {
                 }
 
                 .zone__text--anime {
-                    width: 15%;
+                    width: 18%; /* 15 */
                     display: flex;
                     justify-content: center;
                     align-items: center;
