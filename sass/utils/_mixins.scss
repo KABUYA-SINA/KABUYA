@@ -74,7 +74,7 @@
         z-index: -1;
         @include box-radius;
         transition: opacity 250ms; 
-        background: linear-gradient(to top left, rgba(209, 73, 245, .6), rgba(235, 176, 211, .5));
+        background: linear-gradient(to top left, rgba(209, 73, 245, .6) 1%, rgba(235, 176, 211, .5) 0%);
     }
 }
 
