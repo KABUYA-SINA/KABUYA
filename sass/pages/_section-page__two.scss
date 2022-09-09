@@ -103,8 +103,8 @@ section {
 
                 &:hover .zone__text--anime i {
                     transform: rotate(1turn);
-                    transition-duration: 1.5s;
-                    transition-delay: 100ms; 
+                    transition-duration: 1.5s; /* .5s */
+                    transition-delay: 100ms;  /* 300 */
                 }
 
                 &:active .zone__text--anime i {
