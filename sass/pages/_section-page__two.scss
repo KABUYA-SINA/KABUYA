@@ -96,8 +96,8 @@ section {
             .zone__text {
                 display: flex;
                 overflow: hidden;
+                border-radius: 15px; 
                 @include shadow;
-                @include box-radius;
                 margin-bottom: nth($margin, 2);
                 
 
