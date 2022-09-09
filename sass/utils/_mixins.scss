@@ -29,7 +29,7 @@
     padding: nth($padding, 1) nth($padding, 2);
     background-color: #a0f1da;  
     color: #24873e; 
-    font-weight: bold;
+    font-weight: 400; /* bold, 500 */
     border-radius: 2px; 
     position: absolute;
 }
