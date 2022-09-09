@@ -86,7 +86,7 @@ section {
             .line {
                 display: inline-block;
                 width: 53px;
-                border: double thin #b0f2b6;
+                border: double thin #b0f2b6; /* 2px solid #b0f2b6 */
                 margin-bottom: nth($padding, 3);
                 @include tablet {
                     text-align: center; 
