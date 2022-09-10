@@ -99,7 +99,7 @@ section {
                 border-radius: 15px; 
                 @include shadow;
                 margin-bottom: nth($margin, 2);
-                
+
                 &:hover {
                     .zone__text--anime {
                         overflow: hidden;
@@ -152,7 +152,6 @@ section {
                         transform: scale(.7, 1);
                         transition: transform 500ms ease-out 200ms;
                     }
-                                
                 }
 
 
@@ -238,5 +237,4 @@ section {
             padding-top: 15px;
             padding-bottom: 15px;
         }
-    
 }
