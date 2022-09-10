@@ -100,51 +100,84 @@ section {
                 @include shadow;
                 margin-bottom: nth($margin, 2);
                 
-
-                &:hover .zone__text--anime i {
-                    transform: rotate(1turn);
-                    transition-duration: 1.5s; /* .5s */
-                    transition-delay: 100ms;  /* 300 */
+                &:hover {
+                    .zone__text--anime {
+                        overflow: hidden;
+                        transform: scaleX(1);
+                        transition: transform 500ms ease-out 100ms;/* 280 *//* gestion aller anime */
+                    }
+                    .zone__text--anime i {
+                        transform: translate(0) rotate(1turn);
+                        transition: transform 500ms ease-out 250ms;
+                    }
+                    .zone__text--move {
+                        transform: scale(1, 1);
+                        transition: transform 500ms ease-in-out 150ms;/* arriver anime */
+                    }
+                    .text-overflow__move {
+                        text-overflow: ellipsis;
+                        transform-origin: left 50%;
+                        transform: scale(.8, 1);
+                        transition: transform 500ms ease-out 200ms;
+                    }
+                    p {
+                        width: 75%;
+                        transform: scale(.7, 1);
+                        transition: transform 500ms ease-out 200ms;
+                    }
                 }
 
-                &:active .zone__text--anime i {
-                    transform: rotate(0deg); /* 360 */
-                    transition-duration: 1.5s;
-                    transition-delay: 100ms;
+                &:active {
+                    .zone__text--anime {
+                        overflow: hidden;
+                        transform: scaleX(1);
+                        transition: transform 500ms ease-out 100ms; /* 280 *//* gestion aller anime */
+                    }
+                    .zone__text--move {
+                        transform: scale(1, 1);/* .98 */
+                        transition: transform 500ms ease-in-out 150ms;
+                    }
+                    .zone__text--anime i {
+                        transform: translate(0) rotate(0deg); 
+                        transition: transform 1000ms ease-out 150ms;
+                    }
+                    .text-overflow__move {
+                        text-overflow: ellipsis;
+                        transform-origin: left 50%;
+                        transform: scale(.8, 1);
+                        transition: transform 500ms ease-out 200ms;
+                    }
+                     p {
+                        width: 75%;
+                        transform: scale(.7, 1);
+                        transition: transform 500ms ease-out 200ms;
+                    }
+                                
                 }
-
 
 
                 &--move {
                     width: 100%; 
-                    transform-origin: left;
-                    transform: scaleX(1.185); /* 1.16 */
-                    transition: all 750ms ease-in-out;
                     visibility: visible;
                     overflow: hidden;
                     background: $white-color;
                     cursor: pointer;
                     text-align: left;
-                    padding: nth($padding, 2); 
+                    padding: nth($padding, 2);
+                    transform-origin: left;
+                    transform: scaleX(1.15);/* 1.16 *//* 1.185 */
+                    transition: transform 200ms ease-in-out 150ms;/* gestion retour anime *//* transition: all 750ms ease-in-out; */
 
                     .break-this {
                         display: flex;
                     }
                 }
-                &--move:hover {
-                    transform: scale(1, 1);  
-                }
 
-                &--move:active{
-                    transform: scale(1, 1); 
-                }
                 @include tablet{
                     .break-three{
                         display: flex;
                     }
                 }
-
-
 
                 .text-overflow {
                     display: flex;
@@ -154,12 +187,17 @@ section {
 
                 .text-overflow__move {
                     text-overflow: ellipsis;
-                    width: 70%;
+                    transform-origin: left;
+                    transform: scale(1);
+                    transition: transform 300ms ease-out 50ms;
                 }
 
                 p {
                     white-space: nowrap;
                     overflow: hidden;
+                    transform-origin: left 50%;
+                    transform: scale(1);
+                    transition: transform 500ms ease-out 500ms;
                 }
 
                 .space {
@@ -168,13 +206,18 @@ section {
                 }
 
                 .zone__text--anime {
-                    width: 18%; /* 15 */
+                    width: 15%; /* 18 */
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     background-color: #99E2D0; /* #b0f2b6 */
                     color: $white-color;
+                    overflow: hidden;
+                    transform-origin: right;
+                    transform: scale(1) translate(100%);
+                    transition: transform 200ms ease-in-out 190ms; /* gestion retour anime */
+
                 }
             }
             text-align: start;
