@@ -23,17 +23,22 @@
 }
 .icon-heart:hover {
     opacity: 0;
-    animation: heart 1000ms ease-in-out 100ms;
+    animation: heart 1000ms ease-in-out 100ms both;
 }
 
 .icon-heart:active {
     opacity: 0;
-    animation: heart 800ms ease-in-out 50ms;
+    animation: heart 800ms ease-in-out 50ms both;
     background-image: linear-gradient(to top, #d149f5, #e163e7, #eb7ddc, #ee97d6, #ebb0d3);
 }
 @include tablet{
     .icon-heart:hover {
-    opacity: 0;
-    animation: heart 1000ms ease-in-out 200ms;
+        opacity: 0;
+        animation: heart 1000ms ease-in-out 200ms both;
+    }
+    .icon-heart:active {
+        opacity: 0;
+        animation: heart 800ms ease-in-out 50ms both;
+        background-image: linear-gradient(to top, #d149f5, #e163e7, #eb7ddc, #ee97d6, #ebb0d3);
     }
 }
