@@ -39,6 +39,7 @@
     justify-content: space-between;
     padding: nth($padding, 1) nth($padding, 3) nth($padding, 2) nth($padding, 2);
     margin-top: nth($margin, 1)-12;
+    cursor: pointer;
 }
 
 @mixin btn {
